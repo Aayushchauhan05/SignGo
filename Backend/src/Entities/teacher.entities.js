@@ -11,6 +11,10 @@ const teacherLoginSchema = new mongoose.Schema({
     type: String,
     required: true
   },
+  email:{
+    type: String,
+    required: true
+  },
   teacher: {
     type: Boolean,
     required: true
@@ -21,6 +25,6 @@ const teacherLoginSchema = new mongoose.Schema({
   }
 });
 
-const TeacherLogin = mongoose.model('TeacherLogin', teacherLoginSchema);
+const Teacher = mongoose.model('TeacherLogin', teacherLoginSchema);
 
-module.exports = TeacherLogin;
+module.exports = Teacher;
