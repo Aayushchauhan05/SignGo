@@ -1,4 +1,4 @@
-const { created, alreadyExist, serverError } = require("../constant/status.constant")
+const { alreadyExist, created, serverError, notFound, unAuthorised, success } = require( "../constant/status.constant.js");
 const TeacherService = require("../Services/teacher.service")
 
 module.exports=  class TeacherController{
@@ -17,4 +17,21 @@ module.exports=  class TeacherController{
             }
         }
     }
+    async loginTeacher(req,res){
+        try {
+            console.log("controller->teacher.controller->loginTeacher");
+            const data= await this.userservice.userLoginService(req.body)
+            return res.status(success).send(data)
+        } catch (error) {
+            if (error.message==="User Not Found") {
+               return res.status(notFound).send({message:"user not found"})
+            }
+            else if(error.message==="Wrong Password") {
+                return res.status(unAuthorised).send({message:"Wrong Password"})
+            }
+            else{
+                return  res.status(serverError).send({message:"Internal server error"})
+            }
+        }
+        }
 }
