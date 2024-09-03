@@ -11,6 +11,7 @@ if (userExist) {
     
 }
 const bcryptSalt=8;
+console.log(bcryptSalt)
 const hashPassword= await bcrypt.hash(userdata.password,bcryptSalt)
 const data= await this.userdao.createUser({...userdata,password:hashPassword})
 return data;

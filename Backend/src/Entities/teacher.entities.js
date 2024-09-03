@@ -4,8 +4,7 @@ const teacherLoginSchema = new mongoose.Schema({
   username: {
     type: String,
     required: true,
-    unique: true,
-    trim: true
+  
   },
   password: {
     type: String,
@@ -22,6 +21,10 @@ const teacherLoginSchema = new mongoose.Schema({
   lastLogin: {
     type: Date,
     default: Date.now
+  },
+  quizCreated:{
+type:mongoose.Schema.ObjectId,
+ref:"quiz"
   }
 });
 
