@@ -6,20 +6,7 @@ import Image from 'next/image';
 export default function Page() {
   return (
     <div className="min-h-screen bg-gray-100 flex flex-col">
-      {/* Navbar */}
-      <nav className="bg-[#f1f5f9] p-4 shadow-md  ">
-        <div className="container mx-auto flex items-center justify-between">
-          {/* Heading */}
-          <h1 className="text-white text-2xl font-bold">SignGo</h1>
-          {/* Navigation Links */}
-          <div className="flex space-x-4">
-            <a href="#" className="text-white text-xl font-sans font-semibold">Home</a>
-            <a href="#" className="text-white text-xl font-sans  font-semibold">Learning</a>
-            <a href="#" className="text-white text-xl font-sans  font-semibold">Tool</a>
-            <a href="#" className="text-white text-xl font-sans  font-semibold">Profile</a>
-          </div>
-        </div>
-      </nav>
+     
 
       {/* Main Content */}
       <div className='w-[56%] mx-auto'>

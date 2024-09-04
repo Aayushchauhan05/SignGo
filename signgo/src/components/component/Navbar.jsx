@@ -34,7 +34,7 @@ export function Navbar() {
         </Link>
         <nav className="hidden md:flex items-center gap-6 text-sm font-medium">
           <Link
-            href="/page"
+            href="/"
             className="px-2 py-1 rounded-md transition-colors hover:bg-muted hover:text-muted-foreground"
             prefetch={false}>
             Home
@@ -56,6 +56,12 @@ export function Navbar() {
             className="px-2 py-1 rounded-md transition-colors hover:bg-muted hover:text-muted-foreground"
             prefetch={false}>
             Student Dashboard
+          </Link>
+          <Link
+            href="/parent"
+            className="px-2 py-1 rounded-md transition-colors hover:bg-muted hover:text-muted-foreground"
+            prefetch={false}>
+            Parent Dashboard
           </Link>
         </nav>
         <Sheet>
