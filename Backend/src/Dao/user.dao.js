@@ -6,6 +6,6 @@ module.exports= class userDao {
 return this.model.create(data)
     }
     async findUser(email){
-return this.model.find(email)
+return this.model.findOne({email:email})
     }
 }
