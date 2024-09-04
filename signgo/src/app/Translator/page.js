@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { useState } from 'react';
 import Head from 'next/head';
 
@@ -52,30 +52,30 @@ export default function Translator() {
         <meta name="description" content="Speech-to-Text and Translation App" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="flex justify-center items-center min-h-screen bg-gray-100">
-        <div className="container mx-auto p-8 bg-white shadow-lg rounded-lg">
-          <h1 className="text-center text-2xl font-bold mb-4">Speech-to-Text and Translation</h1>
+      <main className="flex justify-center items-center min-h-screen bg-gradient-to-br from-gray-100 to-gray-300">
+        <div className="container mx-auto p-8 bg-white rounded-lg h-full">
+          <h1 className="text-center text-3xl font-extrabold text-gray-800 mb-6">Speech-to-Text and Translation</h1>
           <form onSubmit={handleSubmit} className="flex flex-col items-center">
             <input
               type="file"
               id="fileInput"
               name="fileInput"
               accept="audio/*"
-              className="mb-4 p-2 border rounded"
+              className="mb-4 p-2 border rounded w-full max-w-xs text-gray-700"
             />
             <button
               type="submit"
-              className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700"
+              className="bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-opacity-75"
             >
               Upload and Process
             </button>
           </form>
-          {loading && <div className="loader" />}
-          <div id="results" className="mt-6">
-            <h2 className="text-xl font-semibold">Transcription:</h2>
-            <p className="text-gray-700">{transcription}</p>
-            <h2 className="text-xl font-semibold mt-4">Translation:</h2>
-            <p className="text-gray-700">{translation}</p>
+          {loading && <div className="loader mt-6" />}
+          <div id="results" className="mt-8 text-center">
+            <h2 className="text-xl font-semibold text-gray-800">Transcription:</h2>
+            <p className="text-gray-600 mt-2">{transcription}</p>
+            <h2 className="text-xl font-semibold text-gray-800 mt-6">Translation:</h2>
+            <p className="text-gray-600 mt-2">{translation}</p>
           </div>
         </div>
       </main>
