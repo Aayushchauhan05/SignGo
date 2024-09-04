@@ -8,7 +8,7 @@ export default function Page() {
     <div className="min-h-screen bg-gray-100 flex flex-col">
      
 
-      {/* Main Content */}
+      
       <div className='w-[56%] mx-auto'>
 
         <div className='relative top-16 left-[75px]'>
@@ -18,9 +18,9 @@ export default function Page() {
         </div>
 
       <div className="container mx-auto p-20 flex-1">
-        {/* First Row of Cards */}
+       
         <div className="flex flex-row flex-wrap justify-between">
-          {/* Card 1 */}
+          
           <div >
             <div className='bg-white   shadow-md  '>
             <img
@@ -40,7 +40,7 @@ export default function Page() {
            
           </div>
 
-          {/* Card 2 */}
+          
           <div >
             <div className='bg-white    shadow-md  '>
             <img
@@ -60,7 +60,7 @@ export default function Page() {
            
           </div>
 
-          {/* Card 3 */}
+          
           <div >
             <div className='bg-white   shadow-md  '>
             <img
@@ -79,7 +79,7 @@ export default function Page() {
 
            
           </div>
-          {/* Card 4 */}
+          
           <div >
             <div className='bg-white   shadow-md  '>
             <img
@@ -109,9 +109,9 @@ export default function Page() {
             </h1>
           </div>
 
-        {/* Second Row of Cards */}
+        
         <div className="flex flex-row flex-wrap justify-between">
-          {/* Card 5 */}
+          
           <div className="bg-white   ">
             <img
               src=".\h5.jpg"
@@ -124,7 +124,7 @@ export default function Page() {
             </div>
           </div>
 
-          {/* Card 6 */}
+          
           <div className="bg-white   ">
             <img
               src=".\h6.jpg"
@@ -136,7 +136,7 @@ export default function Page() {
               <p className="text-gray-700 relative  font-medium">Sign-to-speech</p>
             </div>
           </div>
-          {/* card 7 */}
+          
           <div className="bg-white   ">
             <img
               src=".\h6.jpg"
@@ -158,7 +158,7 @@ export default function Page() {
       
       
 
-        {/* Button */}
+       
         <div className="flex justify-start mt-8">
           <a href="#" className="bg-[#000000] text-[#fff] py-2 px-11 rounded-lg shadow-md hover:bg-gray-800 transition duration-300">
             Get Started
@@ -168,7 +168,10 @@ export default function Page() {
 
       </div>
 
-      {/* Bottom Navbar */}
+      
+
+
+      
       <nav className=" text-white   mb-1 bg-[#f1f5f9]  ">
         <div className='h-[2px] w-full bg-[#f3f4f6] '></div>
         <div className="container mx-auto flex pt-4 justify-around">
